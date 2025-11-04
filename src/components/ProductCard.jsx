@@ -17,7 +17,7 @@ const ProductCard = ({ product, isActive, onClick }) => {
           : 'ring-white/10 hover:ring-cyan-300/30 hover:shadow-[0_0_25px_rgba(34,211,238,0.15)]'
       }`}
     >
-      <div className="relative h-64 w-full overflow-hidden bg-black">
+      <div className="relative h-56 w-full overflow-hidden bg-black sm:h-64">
         <img
           src={product.image}
           alt={product.name}
@@ -39,15 +39,15 @@ const ProductCard = ({ product, isActive, onClick }) => {
         </div>
       </div>
 
-      <div className="flex items-start justify-between gap-4 p-4">
+      <div className="flex items-start justify-between gap-3 p-4 sm:gap-4">
         <div>
-          <h3 className="text-base font-semibold text-white">{product.name}</h3>
-          <p className="mt-1 text-sm text-white/60">{product.category}</p>
+          <h3 className="text-sm font-semibold text-white sm:text-base">{product.name}</h3>
+          <p className="mt-1 text-xs text-white/60 sm:text-sm">{product.category}</p>
         </div>
         <div className="text-right">
-          <div className="text-lg font-semibold text-cyan-300">${product.price.toFixed(2)}</div>
+          <div className="text-base font-semibold text-cyan-300 sm:text-lg">${product.price.toFixed(2)}</div>
           {!product.inStock && (
-            <div className="text-xs text-rose-300">Restocking soon</div>
+            <div className="text-[10px] text-rose-300 sm:text-xs">Restocking soon</div>
           )}
         </div>
       </div>

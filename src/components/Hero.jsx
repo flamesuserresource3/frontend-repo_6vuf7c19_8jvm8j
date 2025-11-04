@@ -4,7 +4,7 @@ import { Rocket } from 'lucide-react';
 
 const Hero = () => {
   return (
-    <section className="relative h-[78vh] w-full overflow-hidden bg-black" id="hero">
+    <section className="relative h-[70vh] w-full overflow-hidden bg-black sm:h-[78vh]" id="hero">
       {/* Spline background */}
       <div className="absolute inset-0">
         <Spline
@@ -16,29 +16,21 @@ const Hero = () => {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 mx-auto flex h-full max-w-6xl flex-col items-center justify-center px-6 text-center">
+      <div className="relative z-10 mx-auto flex h-full max-w-6xl flex-col items-center justify-center px-5 text-center sm:px-6">
         <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs font-medium text-white/80 backdrop-blur-sm">
           <Rocket className="h-3.5 w-3.5 text-cyan-400" />
-          Futuristic Collection
+          Premium Hoodies
         </div>
-        <h1 className="font-geist text-4xl font-semibold leading-tight text-white drop-shadow-[0_0_30px_rgba(34,211,238,0.35)] sm:text-5xl md:text-6xl">
+        <h1 className="font-geist text-[32px] font-semibold leading-tight text-white drop-shadow-[0_0_30px_rgba(34,211,238,0.35)] sm:text-5xl md:text-6xl">
           Ethereal Stock
         </h1>
-        <p className="mt-4 max-w-2xl text-base text-white/70 sm:text-lg">
-          A sleek, dark experience with glowing detail and motion. Slide through picks and watch them morph in size.
-        </p>
-        <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
+        {/* Removed subtitle under the title for a cleaner hero */}
+        <div className="mt-6 flex flex-wrap items-center justify-center gap-3 sm:mt-8">
           <a
             href="#products"
             className="rounded-lg bg-cyan-500/90 px-5 py-3 text-sm font-medium text-black shadow-[0_0_25px_rgba(34,211,238,0.55)] transition hover:bg-cyan-400 hover:shadow-[0_0_35px_rgba(34,211,238,0.75)]"
           >
-            Explore Products
-          </a>
-          <a
-            href="#about"
-            className="rounded-lg bg-white/5 px-5 py-3 text-sm font-medium text-white ring-1 ring-white/10 backdrop-blur-sm transition hover:bg-white/10"
-          >
-            Learn More
+            Explore Hoodies
           </a>
         </div>
       </div>

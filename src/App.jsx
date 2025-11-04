@@ -5,85 +5,76 @@ import Footer from './components/Footer';
 
 const products = [
   {
-    id: 'p-1',
-    name: 'Mono Wireless Headphones',
-    category: 'Audio',
-    price: 129.0,
-    inStock: true,
-    image:
-      'https://images.unsplash.com/photo-1704440278730-b420f5892700?ixid=M3w3OTkxMTl8MHwxfHNlYXJjaHwxfHxNb25vJTIwV2lyZWxlc3MlMjBIZWFkcGhvbmVzfGVufDB8MHx8fDE3NjIyMzc4ODh8MA&ixlib=rb-4.1.0&w=1600&auto=format&fit=crop&q=80',
-  },
-  {
-    id: 'p-2',
-    name: 'Aero Smartwatch',
-    category: 'Wearables',
-    price: 199.0,
-    inStock: false,
-    image:
-      'https://images.unsplash.com/photo-1662220727289-27d6b2f10a82?ixid=M3w3OTkxMTl8MHwxfHNlYXJjaHwxfHxBZXJvJTIwU21hcnR3YXRjaHxlbnwwfDB8fHwxNzYyMjM3ODg4fDA&ixlib=rb-4.1.0&w=1600&auto=format&fit=crop&q=80',
-  },
-  {
-    id: 'p-3',
-    name: 'Slate Mechanical Keyboard',
-    category: 'Accessories',
-    price: 159.0,
-    inStock: true,
-    image:
-      'https://images.unsplash.com/photo-1635663283406-093c21a76d3b?ixid=M3w3OTkxMTl8MHwxfHNlYXJjaHwxfHxTbGF0ZSUyME1lY2hhbmljYWwlMjBLZXlib2FyZHxlbnwwfDB8fHwxNzYyMjM3ODg5fDA&ixlib=rb-4.1.0&w=1600&auto=format&fit=crop&q=80',
-  },
-  {
-    id: 'p-4',
-    name: 'Nimbus Desk Lamp',
-    category: 'Home',
-    price: 89.0,
-    inStock: true,
-    image:
-      'https://images.unsplash.com/photo-1614447912052-0db13d71b82e?ixid=M3w3OTkxMTl8MHwxfHNlYXJjaHwxfHxOaW1idXMlMjBEZXNrJTIwTGFtcHxlbnwwfDB8fHwxNzYyMjM3ODg5fDA&ixlib=rb-4.1.0&w=1600&auto=format&fit=crop&q=80',
-  },
-  {
-    id: 'p-5',
-    name: 'Peak Trail Backpack',
-    category: 'Outdoors',
-    price: 139.0,
-    inStock: false,
-    image:
-      'https://images.unsplash.com/photo-1616518178264-6b3489180867?ixid=M3w3OTkxMTl8MHwxfHNlYXJjaHwxfHxQZWFrJTIwVHJhaWwlMjBCYWNrcGFja3xlbnwwfDB8fHwxNzYyMjM3ODkwfDA&ixlib=rb-4.1.0&w=1600&auto=format&fit=crop&q=80',
-  },
-  {
-    id: 'p-6',
-    name: 'Aura Bluetooth Speaker',
-    category: 'Audio',
+    id: 'h-1',
+    name: 'Shadow Zip Hoodie',
+    category: 'Zip Hoodie',
     price: 79.0,
     inStock: true,
     image:
-      'https://images.unsplash.com/photo-1643385958950-8f0b8852171a?ixid=M3w3OTkxMTl8MHwxfHNlYXJjaHwxfHxBdXJhJTIwQmx1ZXRvb3RoJTIwU3BlYWtlcnxlbnwwfDB8fHwxNzYyMjM3ODkwfDA&ixlib=rb-4.1.0&w=1600&auto=format&fit=crop&q=80',
+      'https://images.unsplash.com/photo-1512436991641-6745cdb1723f?q=80&w=1600&auto=format&fit=crop',
   },
   {
-    id: 'p-7',
-    name: 'Flux Charging Pad',
-    category: 'Accessories',
-    price: 39.0,
+    id: 'h-2',
+    name: 'Nimbus Pullover',
+    category: 'Pullover',
+    price: 69.0,
     inStock: true,
     image:
-      'https://images.unsplash.com/photo-1746291644839-0f5b4d88ffd0?ixid=M3w3OTkxMTl8MHwxfHNlYXJjaHwxfHxGbHV4JTIwQ2hhcmdpbmclMjBQYWR8ZW58MHwwfHx8MTc2MjIzNzg5MXww&ixlib=rb-4.1.0&w=1600&auto=format&fit=crop&q=80',
+      'https://images.unsplash.com/photo-1520975916090-3105956dac38?q=80&w=1600&auto=format&fit=crop',
   },
   {
-    id: 'p-8',
-    name: 'Breeze Air Purifier',
-    category: 'Home',
-    price: 229.0,
+    id: 'h-3',
+    name: 'Eclipse Fleece Hoodie',
+    category: 'Fleece',
+    price: 89.0,
     inStock: false,
     image:
-      'https://images.unsplash.com/photo-1756575433595-c2f87d10e5f4?ixid=M3w3OTkxMTl8MHwxfHNlYXJjaHwxfHxCcmVlemUlMjBBaXIlMjBQdXJpZmllcnxlbnwwfDB8fHwxNzYyMjM3ODkyfDA&ixlib=rb-4.1.0&w=1600&auto=format&fit=crop&q=80',
+      'https://images.unsplash.com/photo-1520975682238-4e463b482f77?q=80&w=1600&auto=format&fit=crop',
   },
   {
-    id: 'p-9',
-    name: 'Orbit Fitness Tracker',
-    category: 'Wearables',
+    id: 'h-4',
+    name: 'Arctic Oversized Hoodie',
+    category: 'Oversized',
+    price: 84.0,
+    inStock: true,
+    image:
+      'https://images.unsplash.com/photo-1516826957135-700dedea698c?q=80&w=1600&auto=format&fit=crop',
+  },
+  {
+    id: 'h-5',
+    name: 'Cinder Crop Hoodie',
+    category: 'Crop',
+    price: 64.0,
+    inStock: true,
+    image:
+      'https://images.unsplash.com/photo-1537832816519-689ad163238b?q=80&w=1600&auto=format&fit=crop',
+  },
+  {
+    id: 'h-6',
+    name: 'Aurora Tech Hoodie',
+    category: 'Tech Knit',
     price: 99.0,
     inStock: true,
     image:
-      'https://images.unsplash.com/photo-1671644315465-08aba45bc314?ixid=M3w3OTkxMTl8MHwxfHNlYXJjaHwxfHxPcmJpdCUyMEZpdG5lc3MlMjBUcmFja2VyfGVufDB8MHx8fDE3NjIyMzc4OTJ8MA&ixlib=rb-4.1.0&w=1600&auto=format&fit=crop&q=80',
+      'https://images.unsplash.com/photo-1539874754764-5a96559165b3?q=80&w=1600&auto=format&fit=crop',
+  },
+  {
+    id: 'h-7',
+    name: 'Coal Classic Hoodie',
+    category: 'Classic',
+    price: 59.0,
+    inStock: true,
+    image:
+      'https://images.unsplash.com/photo-1548883354-7622d99b14e8?q=80&w=1600&auto=format&fit=crop',
+  },
+  {
+    id: 'h-8',
+    name: 'Mist Lightweight Hoodie',
+    category: 'Lightweight',
+    price: 72.0,
+    inStock: false,
+    image:
+      'https://images.unsplash.com/photo-1592875245564-0b7231b2a1fd?q=80&w=1600&auto=format&fit=crop',
   },
 ];
 
@@ -95,18 +86,8 @@ function App() {
       {/* subtle particle-esque glow strip */}
       <div className="pointer-events-none h-px w-full bg-gradient-to-r from-transparent via-cyan-400/40 to-transparent" />
 
-      <main className="mx-auto max-w-none bg-black pb-20 pt-12">
+      <main className="mx-auto max-w-none bg-black pb-16 pt-10 sm:pb-20 sm:pt-12">
         <ProductSlider products={products} />
-
-        <section id="about" className="mt-20">
-          <div className="mx-auto max-w-3xl px-6 text-center">
-            <h3 className="font-geist text-2xl font-semibold">A dark, glowing aesthetic</h3>
-            <p className="mt-3 text-white/70">
-              Built for a moody, futuristic vibe with motion baked in. Slide between items and watch the size
-              transition emphasize focus. Particles shimmer in the hero for atmosphere.
-            </p>
-          </div>
-        </section>
       </main>
 
       <Footer />

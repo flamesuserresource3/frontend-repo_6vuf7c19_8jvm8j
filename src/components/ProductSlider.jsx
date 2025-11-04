@@ -35,11 +35,11 @@ const ProductSlider = ({ products }) => {
   }, [onKey]);
 
   return (
-    <section id="products" className="relative mx-auto w-full max-w-6xl px-6">
-      <div className="mb-8 flex items-end justify-between">
+    <section id="products" className="relative mx-auto w-full max-w-6xl px-5 sm:px-6">
+      <div className="mb-6 flex flex-col items-start justify-between gap-3 sm:mb-8 sm:flex-row sm:items-end">
         <div>
-          <h2 className="font-geist text-2xl font-semibold text-white sm:text-3xl">Trending Picks</h2>
-          <p className="mt-1 text-sm text-white/60">Slide to browse. Center item grows with a glow.</p>
+          <h2 className="font-geist text-2xl font-semibold text-white sm:text-3xl">Trending Hoodies</h2>
+          {/* Removed helper text under the heading */}
         </div>
         <div className="flex items-center gap-2">
           <button
@@ -65,7 +65,7 @@ const ProductSlider = ({ products }) => {
           <div className="absolute left-1/2 top-1/2 h-64 w-64 -translate-x-1/2 -translate-y-1/2 rounded-full bg-cyan-500/20" />
         </div>
 
-        <div className="flex items-stretch justify-center gap-6 overflow-hidden">
+        <div className="flex items-stretch justify-center gap-4 overflow-hidden sm:gap-6">
           <AnimatePresence initial={false}>
             {visible.map(({ item, idx, offset }) => {
               const distance = Math.abs(offset);
@@ -82,7 +82,7 @@ const ProductSlider = ({ products }) => {
                   exit={{ opacity: 0, y: -20 }}
                   transition={{ duration: 0.3, ease: 'easeOut' }}
                   style={{ zIndex }}
-                  className="basis-[75%] sm:basis-[45%] md:basis-[32%]"
+                  className="basis-[88%] sm:basis-[55%] md:basis-[38%]"
                 >
                   <motion.div animate={{ scale }} transition={{ type: 'spring', stiffness: 300, damping: 30 }}>
                     <ProductCard product={item} isActive={isActive} onClick={() => setIndex(idx)} />
@@ -94,7 +94,7 @@ const ProductSlider = ({ products }) => {
         </div>
 
         {/* Progress dots */}
-        <div className="mt-6 flex items-center justify-center gap-2">
+        <div className="mt-5 flex items-center justify-center gap-2 sm:mt-6">
           {products.map((_, i) => (
             <button
               key={i}
@@ -103,8 +103,8 @@ const ProductSlider = ({ products }) => {
               className={`h-2.5 w-2.5 rounded-full transition ${
                 i === index ? 'bg-cyan-400 shadow-[0_0_12px_rgba(34,211,238,0.8)]' : 'bg-white/20 hover:bg-white/40'
               }`}
-            />
-          ))}
+            />)
+          )}
         </div>
       </div>
     </section>
